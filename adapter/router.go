@@ -21,6 +21,8 @@ import (
 type Router interface {
 	Lifecycle
 
+	OutboundManager() OutboundManager
+	ProviderManager() OutboundProviderManager
 	FakeIPStore() FakeIPStore
 
 	ConnectionRouter
